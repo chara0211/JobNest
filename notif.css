@@ -1,0 +1,85 @@
+/* Styles pour les notifications */
+.notifications-container {
+    margin: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.notification:last-child {
+    border-bottom: none;
+}
+
+.notification .content {
+    display: flex;
+    align-items: center;
+}
+
+.notification .icon {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.notification .details {
+    margin-right: auto;
+}
+
+.notification .details h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.notification .details p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.notification .time {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.notification .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.notification .close-btn:hover {
+    color: #f44336;
+}
+
+/* Styles les types de notifications */
+.notification.new-user .icon {
+    color: #4caf50;
+}
+
+.notification.message .icon {
+    color: #ff9800;
+}
+
+.notification.comment .icon {
+    color: #9c27b0;
+}
+
+.notification.connect .icon {
+    color: #2196f3;
+}

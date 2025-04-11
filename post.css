@@ -1,0 +1,74 @@
+/* Form styling */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 400px;
+}
+body {
+    background-image: url('white.avif');
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire page with the background image */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #555;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #61ddc2;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style select dropdown */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('arrow-down.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+/* Add some hover effects */
+input[type="text"]:hover, select:hover, input[type="file"]:hover {
+    border-color: #aaa;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+/* Additional styling for smaller screens */
+@media screen and (max-width: 500px) {
+    form {
+        width: 90%;
+    }
+}

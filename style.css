@@ -1,0 +1,783 @@
+/*font link*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Patua+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family:"Poppins", sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+*::selection{
+    background-color:rgb(255, 255, 255);
+    color: black;
+
+}
+::-webkit-scrollbar{
+    width:1rem;
+    height: .5rem;
+
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(21, 18, 13);
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+
+
+}
+body{
+   background-color: white;
+    
+}
+section{
+    padding: 2rem;
+    margin:0 auto;
+    max-width: 1200px;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color:white;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: capitalize;
+
+
+}
+.heading{
+    text-align: center;
+    margin-bottom:2.5rem;
+    font-size: 2rem;
+    color: #055244;
+    text-transform: capitalize;
+    padding:1rem 0 ;
+}
+.btn:hover{
+    background-color: #61ddc2;
+    color: black;
+}
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #61ddc2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+    z-index: 1000;
+
+}
+.header .flex{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#menu-btn{
+    font-size:2.5rem ;
+    color: black;
+    cursor: pointer;
+    display:none ;
+
+
+
+}
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: black;
+
+}
+.header .flex .logo i{
+    margin-right: .5rem;
+    color: black;
+    
+}
+.header .flex .navbar a{
+    display: inline-block;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    color:black;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    
+}
+.header .flex .navbar a:hover{
+    background-color: black ;
+    color: white;
+}
+.home-container{
+    background: url('w.avif'),rgba(0, 0, 0, 0.6) no-repeat;
+ 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color;
+   
+}
+
+.home-container .home{
+min-height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.home-container .home > * {
+    margin-right: 50px; /* Add space between the forms */
+}
+
+.home-container .home form{
+    background-color: #67d2bc;
+    width: 50vh;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow:0 2px 4px black ;
+
+}
+.home-container .home form h3{
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+
+}
+.home-container .home form p {
+    color: black;
+    font-size: 1.5rem;
+
+}
+.home-container .home form .input{
+    width: 100%;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    background-color: aliceblue;
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    color: black;
+}
+.category .box-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,25rem);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.category .box-container .box{
+    border-radius: .5rem;
+    box-shadow: #091b18 2px 0px 3px;
+    border: #1d2725 solid;
+    padding: 4%;
+    backdrop-filter: blur(10px);
+    background-color: snow;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.category .box-container .box i{
+    height: 4.5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 1.8rem;
+    color: black;
+    border-radius: .5rem;
+    background-color: #c4e8e1;
+    text-align: center;
+
+}
+.category .box-container .box h3{
+    font-size: 1.2rem;
+    color: #000000;
+    padding-bottom: .4rem;
+    text-transform: capitalize;
+}
+.category .box-container .box span{
+    color: blue;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.category .box-container .box:hover{
+    background-color: #67d2bc;
+}
+
+
+
+
+.footer .grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,30rem);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer .grid .boxX h3{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+
+}
+.footer .grid .boxX a{
+    display: block;
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    color: #1b433b;
+
+}
+.footer .grid .boxX a i{
+    color: #61ddc2;
+    margin-right:.8rem ;
+    transition: .2s linear;
+
+}
+.footer .grid .boxX a:hover i{
+    margin-right: 2rem;
+
+}
+.footer .credit{
+    text-align: center;
+    padding: 2rem;
+    background-color: #61ddc2;
+    font-size: 2rem;
+    color: black;
+    border-top: solid;
+    border-bottom:solid black;
+
+}
+
+/*JOBSSSS*/
+.jobs-conatiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.company {
+    padding: 20px;
+    border-bottom: 1px solid #a46e6e;
+}
+
+.company img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.job-details {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.job-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.location {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.tags p {
+    margin-right: 10px;
+    margin-bottom: 5px;
+
+}
+
+.flex-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+.heart-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.heart-btn:hover {
+    transform: scale(1.2);
+    color: #ff5757; /* Change color on hover */
+}
+
+
+/*end jobs*/
+
+
+/*media queries*/
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px){
+   #menu-btn{
+    display: inline-block;
+
+   }
+   .header .flex .navbar{
+    position: absolute;
+    top: 99%;left:0;right: 0;
+    border-top:solid;
+    border-bottom: solid;
+    background-color: white;
+    padding:1rem .5rem;
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    transition: .2s linear;
+
+   }
+   .header .flex .navbar.active{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%); 
+   }
+   .header .flex .navbar a{
+    display: block;
+    padding: 1.5rem 2rem;
+
+   }
+   /*category box container*/
+   .category .box-container{
+    grid-template-columns: repeat(auto-fit,16rem);
+    
+   }
+
+
+   
+}
+
+.about {
+    /* padding: 5rem 2rem; */
+    background-color: white;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about .heading {
+    font-size: 3rem;
+    color: #055244;
+    /* margin-bottom: 2rem; */
+    text-transform: capitalize;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 2rem 0 1rem;
+}
+
+.about p {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.about .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about .team .team-member {
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30rem;
+}
+
+.about .team .team-member img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.about .team .team-member h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.about .team .team-member p {
+    font-size: 1.4rem;
+    color: #777;
+}
+
+.about blockquote {
+    font-size: 1.6rem;
+    color: #777;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-left: 5px solid #61ddc2;
+}
+
+.about a {
+    color: #61ddc2;
+    text-decoration: none;
+}
+
+.about a:hover {
+    text-decoration: none;
+}
+
+
+/*login CSS*/
+/* Global Styles */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(21, 18, 13);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    color: #055244;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Login Styles */
+.login {
+    padding: 5rem 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.login .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login form h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.login form p {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.login form .input {
+    width: 100%;
+    border-radius: .5rem;
+    margin: 1rem 0 2rem 0;
+    background-color: aliceblue;
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.login form .btn {
+    margin-top: 2rem;
+}
+
+.register-link {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.register-link a {
+    color: #61ddc2;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/*register_css*/
+
+.register_form {
+    position: relative;
+    
+    width: 100%;
+    background: #f7f7f7;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+  }
+  .register_form .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  .register_form h1 {
+      font-size: 2.5rem;
+      color: black;
+      margin-bottom: 2rem;
+      text-transform: capitalize;
+  }
+  .register_form .form {
+    margin-top: 30px;
+  }
+  .form .input-box {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  .input-box label {
+    color: black;
+    font-size: 1.5rem;
+  }
+  .form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0);
+  }
+  .form .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  .form .column_box {
+      display: flex;
+      column-gap: 80px;
+    }
+  .form .gender-box {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .gender {
+    column-gap: 5px;
+  }
+  .gender input {
+    accent-color: #61ddc2;
+  }
+  .form :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  .gender label {
+    color: black;
+  }
+  .address :where(input, .select-box) {
+    margin-top: 15px;
+  }
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+  }
+  .register_form form .btn {
+      margin-top: 2rem;
+  }
+  .form button {
+      display: inline-block;
+      height: 55px;
+      width: 100%;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-top: 30px;
+      padding: 1rem 3rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: #61ddc2;
+  }
+    
+  .form button:hover {
+    background: white;
+    color: #61ddc2;
+  }
+  /* Responsive*/
+  @media screen and (max-width: 500px) {
+    .form .column {
+      flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender) {
+      row-gap: 15px;
+    }
+  } 
+  .error-message {
+    color: red;
+}
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border-color: #61ddc2;
+}
+
+.result-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: calc(100% - 40px);
+    margin: 20px auto; 
+    box-sizing: border-box;
+}
+.result-item h3 {
+    margin-top: 0;
+}
+
+.result-item p {
+    margin: 10px 0;
+}
+
+.result-item a {
+    color: #61ddc2;
+    text-decoration: none;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+}

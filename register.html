@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="home.php" class="logo"><i class="fas fa-briefcase"></i> JobNest</a>
+            <nav class="navbar">
+                <a href="home.php">Home</a>
+                <a href="about.php">About</a>
+                <a href="jobs.php">All jobs</a>
+                <a href="">                             </a>
+                <a href="">                            </a>
+                <a href="">                          </a>
+                <a href="">                     </a>
+            </nav>
+            <a href="post1.html"  style="margin-top: 0%;"></a>           </section>
+    </header>
+    <!-- fin header-->
+
+    <!-- main body -->
+    <section class="register_form">
+      <div class="container">
+          <h1 class="heading">Registration Form</h1>
+          <form action="traitementRegister.php" method="post" enctype="multipart/form-data" class="form">
+              <div class="column">
+                  <div class="gender-box">
+                      <div class="gender-option">
+                          <div class="gender">
+                              <input type="radio" id="check-male" name="gender" value="Mr" checked />
+                              <label for="check-male">Mr</label>
+                          </div>
+                          <div class="gender">
+                              <input type="radio" id="check-female" name="gender" value="Mrs" />
+                              <label for="check-female">Mrs</label>
+                          </div>
+                          <div class="gender">
+                              <input type="radio" id="check-miss" name="gender" value="Miss" />
+                              <label for="check-miss">Miss</label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="input-box">
+                  <label>Full name</label>
+                  <input type="text" name="username" placeholder="Enter a username" required />
+              </div>
+              <div class="column">
+                  <div class="input-box">
+                      <label>Email Address</label>
+                      <input type="email" placeholder="Enter email address" name="email" required />
+                  </div>
+                  <div class="input-box">
+                      <label>New Password</label>
+                      <input type="password" name="password" placeholder="Enter valid password" required maxlength="50" class="input">
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="input-box">
+                      <label>Phone Number</label>
+                      <input type="text" placeholder="Enter phone number" name="phone_number" required />
+                  </div>
+                  <div class="input-box">
+                      <label>Birth Date</label>
+                      <input type="date" placeholder="Enter birth date" name="birth_date" required />
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="input-box">
+                      <label>Experience Level</label>
+                  </div>
+                  <div class="select-box">
+                      <select name="experience_level">
+                          <option value="Entry">Entry</option>
+                          <option value="Junior">Junior</option>
+                          <option value="Mid">Mid</option>
+                          <option value="Senior">Senior</option>
+                      </select>
+                  </div>
+                  <div class="input-box">
+                      <label>Current Position</label>
+                  </div>
+                  <div class="select-box">
+                      <select name="current_position">
+                          <option value="Manager">Manager</option>
+                          <option value="Engineer">Engineer</option>
+                          <option value="Analyst">Analyst</option>
+                          <option value="Teacher">Teacher</option>
+                          <option value="Software Developer">Software Developer</option>
+                          <option value="Accountant">Accountant</option>
+                          <option value="Marketing Specialist">Marketing Specialist</option>
+                          <option value="Sales Representative">Sales Representative</option>
+                          <option value="Other">Other</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="input-box address">
+                  <label>Address</label>
+                  <div class="column">
+                      <div class="select-box">
+                          <select name="country">
+                              <option hidden>Country</option>
+                              <option value="America">America</option>
+                              <option value="Japan">Japan</option>
+                              <option value="India">India</option>
+                              <option value="Morocco">Morocco</option>
+                          </select>
+                      </div>
+                      <input type="text" placeholder="Enter your city" name="city" />
+                  </div>
+                  <div class="column">
+                      <input type="text" placeholder="Enter your region" name="region" />
+                      <input type="number" placeholder="Enter postal code" name="postal_code" />
+                  </div>
+                  <div class="input-box">
+                      <label>Upload CV</label>
+                      <input type="file" accept=".pdf" name="cv" required />
+                  </div>
+                  <div class="input-box">
+                      <label>URL Linkedin Profile</label>
+                      <input type="url" placeholder="Example: www.linkedin.com/in/prenom-nom/" name="linkedin_url" />
+                  </div>
+              </div>
+              <button type="submit" name="submit">Submit</button>
+              <p class="register-link">Already have an account? <a href="login.php">Log in here</a></p>
+          </form>
+      </div>
+  </section>
+  <!-- fin main body -->
+
+  <!-- footer-->
+  <footer class="footer">
+      <section class="grid">
+          <div class="boxX">
+              <h3>Quick links</h3>
+              <a href="home.html"><i class="fas fa-angle-right"></i>home</a>
+              <a href="about.html"><i class="fas fa-angle-right"></i>about</a>
+              <a href="jobs.html"><i class="fas fa-angle-right"></i>all jobs</a>
+              <a href="jobs.html"><i class="fas fa-angle-right"></i>contact us</a>
+              <a href="#"><i class="fas fa-angle-right"></i>Filter search</a>
+          </div>
+
+          <div class="boxX">
+              <h3>Extra links</h3>
+              <a href="#"><i class="fas fa-angle-right"></i>account</a>
+              <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
+              <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
+              <a href="jobs.html"><i class="fas fa-angle-right"></i>contact us</a>
+              <a href="post.html"><i class="fas fa-angle-right"></i>Post jobs</a>
+              <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>
+          </div>
+
+          <div class="boxX">
+              <h3>Follow us</h3>
+              <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+              <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+              <a href="#"><i class="fab fa-youtube"></i> youtube</a>
+          </div>
+      </section>
+      <div class="credit">&copy;copyright @2024 by<span>IAGI-1</span> | all rights reserved</div>
+  </footer>
+</body>
+</html>

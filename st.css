@@ -1,0 +1,67 @@
+/* View application */
+table {
+    width: 70%; /* Set width to 70% of the container */
+    margin: 20px auto; /* Center the table horizontally */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Decreased padding */
+    text-align: left;
+    font-size: 12px; /* Decreased font size */
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #e3ffe8;
+}
+
+.cv-link {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.cv-link:hover {
+    color: #0056b3;
+}
+
+/* CSS for buttons */
+button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* CSS for specific status colors */
+select[name="status"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px; /* Increased font size */
+}
+
+option[value="Pending"] {
+    background-color: #FFD700; /* Yellow */
+}
+
+option[value="Accepted"] {
+    background-color: #4CAF50; /* Green */
+    color: white; /* White text for better visibility */
+}
+
+option[value="Refused"] {
+    background-color: #FF6347; /* Red */
+    color: white; /* White text for better visibility */
+}
